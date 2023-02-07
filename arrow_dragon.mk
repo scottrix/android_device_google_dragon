@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from dragon device
 $(call inherit-product, device/google/dragon/device.mk)
@@ -33,7 +33,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE                := dragon
-PRODUCT_NAME                  := lineage_dragon
+PRODUCT_NAME                  := arrow_dragon
 PRODUCT_BRAND                 := Google
 PRODUCT_MODEL                 := Pixel C
 PRODUCT_MANUFACTURER          := google
